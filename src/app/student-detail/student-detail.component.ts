@@ -22,7 +22,8 @@ export class StudentDetailComponent implements OnInit {
     } catch (error){
       this.router.navigate(['home']).then(r => {});
     }
-   }
+  }
+  
 
   ngOnInit(): void {
   }

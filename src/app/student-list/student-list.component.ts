@@ -18,11 +18,9 @@ export class StudentListComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-
-    goToDetailsPage = (id: number) => {
-      this.router.navigate(['detail'], {state: {id}}).then(r => {});
-     }
-
   }
+  goToDetailsPage = (id: number) => {
+    this.router.navigate(['detail'], {state: {id}}).then(r => {});
+   }
 
 }
