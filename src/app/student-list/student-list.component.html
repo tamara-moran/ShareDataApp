@@ -1,0 +1,10 @@
+<div class="content" role="main">
+    <h2>Data sharing using query parameters</h2>
+    <p>Click on any one of the below list of students.</p>
+    <br><br>
+    <div *ngFor="let item of studentList" class="card-container">
+     <a class="card" (click)="goToDetailsPage(item.id)" >
+       <span> {{item.id + 1}}. {{item.name}} </span>
+       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+     </a>
+    </div>
