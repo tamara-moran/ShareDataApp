@@ -18,7 +18,7 @@ export class StudentDetailComponent implements OnInit {
 
   constructor(private router: Router) {
     try {
-      this.id = this.router.getCurrentNavigation()!.extras.state!.id;
+      this.id =  this.router.getCurrentNavigation()?.extras?.state?.['id'];
     } catch (error){
       this.router.navigate(['home']).then(r => {});
     }
